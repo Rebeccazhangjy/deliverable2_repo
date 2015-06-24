@@ -178,14 +178,13 @@ public class Deliverable2Test extends TestCase {
 	}
 	
 	// This tests the generateRooms method
-//	@Test
-//	public void testGenerateRooms(){
-//		House h = new House(7);
-//		String result = h.getCurrentRoomInfo();
-//		verify(h, times(1)).generateRooms(7);
-//		//assertTrue(result.contains("You see a"));
-//	}
-//	
+	@Test
+	public void testGenerateRooms(){
+		House h = new House(2);
+		Room[] roomList = h.generateRooms(2);
+		assertTrue(roomList[0].hasCream());
+	}
+	
 	
 	
 	
