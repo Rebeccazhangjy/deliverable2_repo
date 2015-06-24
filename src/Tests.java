@@ -245,6 +245,7 @@ public class Tests {
 	}
 
 	// Test southExit()
+	// southExit() should return true when there exists a south exit
 	@Test
 	public void testSouthExit() {
 		Room room = new Room(false, false, false, true, true);
